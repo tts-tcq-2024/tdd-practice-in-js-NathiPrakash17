@@ -32,7 +32,10 @@ checkForNegatives(numberStrings);
   // sum
   let sum = 0;
   for (let i = 0; i < numberStrings.length; i++) {
-    sum += Number(numberStrings[i]);
+     const num = Number(numberStrings[i]);
+    if (num <= 1000) {
+      sum += num;
+    }
   }
   return sum;
 }
