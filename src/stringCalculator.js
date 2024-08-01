@@ -19,25 +19,31 @@ function checkForNegatives(numberStrings) {
   }
 }
 
-function add(numbers) {
-  if (numbers === '') {
-    return 0;
-  }
-
-  // delimiters removal
-const numberStrings = processDelimiter(numbers);
-  // negative check
-checkForNegatives(numberStrings);
-
-  // sum
-  let sum = 0;
+function sumInputs(numberStrings){
+   let sum = 0;
   for (let i = 0; i < numberStrings.length; i++) {
      const num = Number(numberStrings[i]);
+    // filter - less than 1000
     if (num <= 1000) {
       sum += num;
     }
   }
   return sum;
+}
+function add(numbers) {
+  
+  // empty string
+  if (numbers === '') {
+    return 0;
+  }
+  // delimiters removal
+const numberStrings = processDelimiter(numbers);
+  // negative check
+checkForNegatives(numberStrings);
+  
+  // sum
+  return sumInputs(numberStrings);
+  
 }
 
 module.exports = {
