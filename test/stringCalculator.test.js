@@ -16,7 +16,7 @@ describe('StringCalculator Algorithm', () => {
              expect(add("1,2")).to.equal(3);
         });
       
-        xit('ignoreNumbersGreaterThan1000', () => {
+        it('ignoreNumbersGreaterThan1000', () => {
              expect(add("1,1001")).to.equal(1);
         });
       
