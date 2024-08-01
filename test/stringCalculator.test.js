@@ -24,7 +24,7 @@ describe('StringCalculator Algorithm', () => {
              expect(add("//;\n1;2")).to.equal(3);
         });
       
-        xit('expectSumWithNewlineDelimiter', () => {
+        it('expectSumWithNewlineDelimiter', () => {
              expect(add("1\n2,3")).to.equal(6);
         });
       
