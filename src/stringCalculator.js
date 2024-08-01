@@ -7,7 +7,7 @@ function processDelimiter(numbers) {
     delimiter = numbers.substring(2, delimiterEnd);
     numberStrings = numbers.substring(delimiterEnd + 1);
   }
-  return numberStrings.split(delimiter);
+ return numberStrings.split(new RegExp(`[${delimiter}\n]`));
 }
 
 function add(numbers) {
