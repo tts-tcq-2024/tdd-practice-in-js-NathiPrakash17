@@ -1,4 +1,4 @@
-function extractDelimiter(numbers) {
+function processDelimiter(numbers) {
   let delimiter = ',';
   let numberStrings = numbers;
 
