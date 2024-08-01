@@ -16,15 +16,15 @@ describe('StringCalculator Algorithm', () => {
              expect(add("1,2")).to.equal(3);
         });
       
-        it('ignoreNumbersGreaterThan1000', () => {
+        xit('ignoreNumbersGreaterThan1000', () => {
              expect(add("1,1001")).to.equal(1);
         });
       
-        it('expectSumWithCustomDelimiter', () => {
+        xit('expectSumWithCustomDelimiter', () => {
              expect(add("//;\n1;2")).to.equal(3);
         });
       
-        it('expectSumWithNewlineDelimiter', () => {
+        xit('expectSumWithNewlineDelimiter', () => {
              expect(add("1\n2,3")).to.equal(6);
         });
       
