@@ -20,7 +20,7 @@ describe('StringCalculator Algorithm', () => {
              expect(add("1,1001")).to.equal(1);
         });
       
-        xit('expectSumWithCustomDelimiter', () => {
+        it('expectSumWithCustomDelimiter', () => {
              expect(add("//;\n1;2")).to.equal(3);
         });
       
